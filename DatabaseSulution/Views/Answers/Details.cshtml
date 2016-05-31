@@ -1,0 +1,66 @@
+﻿@model DatabaseSulution.Answer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Answer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrefabAnswers.text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrefabAnswers.text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Question.text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Question.text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Survey.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Survey.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyUser.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyUser.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bool_a)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bool_a)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.answer1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.answer1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

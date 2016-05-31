@@ -1,0 +1,42 @@
+﻿@model DatabaseSulution.QuestionSettings
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QuestionSettings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.QuestionTrigger.id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuestionTrigger.id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuestionType.typename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuestionType.typename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.a_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.a_amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
